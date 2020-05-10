@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header" id="top">
+        <nav >
+        <a href="index.html">Strona główna</a>
+        <a href="nauka-html.html">Nauka HTML</a>
+        <a href="nauka-css.html">Nauka CSS</a>
+        <a href="nauka-js.html">Nauka Javascript</a>
+        <a href="tools.html">Narzędzia</a>
+        </nav>
+    </header>
+    <main>
+        <header class="page-heading">
+            <h1 class="main-heading" style="color: rgb(27, 26, 26);">Krzysztof Szewczyk - moja strona</h1>
+        </header>
+
+        <section>
+            <h2 class="secondary-heading" style="color: white; background: royalblue;">Kim jestem</h2>
+            <p>Witam Cię! Jestem początkującym programistą stron internetowych. Na tej stronie będzie pojawiała się
+                moja droga rozwoju. Przejdź do <a href="#notatki">notatek</a></p>
+                <img src="profil_slack.jpg" alt="Zdjęcie profilowe">
+        </section>
+
+        <section id="notatki">
+            <h2 class="secondary-heading">Notatki z nauki front-endu</h2>
+            <article>
+                <h3 class="paragraph-heading">Warstwy strony internetowej</h3>
+                <p>Dobra strona internetowa ma postać warstwową, z której każda ma swoje właściwości i kompetencje.
+                    Najniższą
+                    warstwą jest treść, czyli całą zawartość która będzie widoczna dla człowieka siedzącego przed
+                    ekranem.<br>
+                    Kolejna to warstwa to semantyka HTML, czyli sposób prezentacji treści. Nad nią pojawia się
+                    formatowanie,
+                    czyli style CSS. Na samej górze tej kanapki pojawia nam warstwa interakcji czyli Javascript.
+                    Sprawa najważniejsza - czyli content
+                    Tym czego każdy z nas szuka w czeluściach internetu jest treść. Bez niej nawet najładniejsze
+                    opakowanie
+                    niewiele zmieni. A składają się na nią nie tylko same teksty, ale też nagłówki, linki, formularze i
+                    cała
+                    gama multimediów. Wszystko to co jest nośnikiem informacji jest naszym contentem. To właśnie ta
+                    zawartość ma
+                    przyciągnąć i zatrzymać odbiorcę na stronie.</p>
+            </article>
+            <article>
+                <h3 class="paragraph-heading">HTML - co to takiego</h3>
+                <p>Tym co trzyma w ryzach prezentowaną treść jest właśnie HTML, czyli HyperText Markup Language. Ten
+                    język,dzięki któremu za pomocą odpowiednich znaczników opakowujemy i rozmieszczamy content na
+                    ekranie
+                    naszych urządzeń.<br>
+                    Każdy element jest opakowany klamrą z nazwą znacznika. Pierwsza klamra zawiera atrybuty, które
+                    będzie
+                    przyjmował otagowany element, a druga jest klamrą zamykającą, która sygnalizuje przeglądarce gdzie
+                    znajduje
+                    się jego koniec.<br>
+                    Mówi się, że HTML jest językiem semantycznym, to znaczy “mający znaczenie”. Opakowując treść
+                    znacznikami
+                    właśnie nadajemy jej znaczenie.
+                    Struktura pliku .html ma postać szkieletu naszej strony i mieści się pomiędzy parą znaczników <b>html i /html</b>
+                    Strona posiada jedną głowę, czyli parę
+
+                    <b>head i /head</b>> oraz swoje ciało czyli wszystko to co mieści się pomiędzy
+
+                    <b>body i /body</b>>.</p>
+            </article>
+            <article>
+                <h3 class="paragraph-heading">CSS - czyli stylizowanie</h3>
+                <p>Za “stylówkę” poszczególnych elementów strony odpowiada CSS, czyli Cascade Style Sheet. To w nich
+                    będziemy definiować jak poszczególne elementy strony będą wyglądały na ekranie i na wydrukach.
+                    Składnia CSS składa się z reguł. Jej budowa wygląda tak:</p>
+                <p>
+                    selektor {
+                    właściwość: wartość;
+                    }
+                </p>
+                <p>Selektorem jest tutaj element dokumentu (nagłówek, akapit itd)
+                    Arkuszy stylów możemy używać bezpośrednio w pliku html, ale czytelniej i lepiej jest to robić w
+                    osobnym dokumencie z rozszerzeniem .css.
+                    W pliku html wstawiamy tylko linka do zewnętrznego arkusza stylów.
+                </p>
+            </article>
+        </section>
+
+    </main>
+    <footer>Strona powstała w trakcie nauki tworzenia front-endu. <a href="#top">Wróć na górę</a></footer>
+</body>
+
+</html>
