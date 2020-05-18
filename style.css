@@ -11,6 +11,7 @@
 }
 body {
   background: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
 }
 section {
   background: #ffffff;
@@ -21,25 +22,19 @@ section {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
-  }
-  .navigation__link {
-    color: white;
-    display: inline-block;
-    margin-right: 20px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .navigation__link--homepage {
-    
-    color: yellow;
-  }
-  .navigation__link--active {
-    font-weight: bold;
-  }
-.page-heading {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.navigation__link {
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation__link--homepage {
+  color: yellow;
+}
+.navigation__link--active {
+  font-weight: bold;
+}
+
 #polecenia {
   background: orange;
 }
