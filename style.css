@@ -22,6 +22,10 @@ section {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
+  position: fixed;
+  display:inline-block;
+  width: 97%;
+  top: 1px;
 }
 .navigation__link {
   color: white;
