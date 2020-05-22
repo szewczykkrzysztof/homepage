@@ -36,7 +36,6 @@ body {
 .page-heading {
   color: white;
   background: #41566b;
-
 }
 #polecenia {
   background: orange;
@@ -50,11 +49,13 @@ body {
   margin-right: 20px;
 }
 .notes {
-
 }
-.notes__heading {
-  color: #353552;
+.notes__article {
+  display: block;
 }
 .notes__article--heading {
+  color: #353552;
+}
+.notes__heading {
   color: #353552;
 }
