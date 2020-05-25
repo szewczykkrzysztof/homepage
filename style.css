@@ -6,12 +6,13 @@ footer {
   background: #3f3f3f;
   color: white;
   padding: 5px;
-  margin-top: 50px;
+  margin: 50px 10% 0 10%;
   box-sizing: border-box;
   border-radius: 5px;
 }
 .about-me {
   min-height: 320px;
+  padding: 0 10%;
 }
 .about-me__image {
   float: left;
@@ -26,8 +27,7 @@ footer {
   border-radius: 5px;
   border: 2px solid black;
   display: block;
-  width: 100%;
-  top: 1px;
+  margin: 0 10%;
   box-sizing: border-box;
 }
 .navigation__link {
@@ -44,6 +44,7 @@ footer {
 .page-heading {
   color: white;
   background: #41566b;
+  margin: 0 10%;
 }
 
 .secondary-heading {
@@ -53,7 +54,9 @@ footer {
   float: left;
   margin-right: 20px;
 }
-
+.notes {
+  padding: 0px 10%;
+}
 .notes__article {
   display: block;
 }
