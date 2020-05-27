@@ -23,6 +23,9 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
 }
+.footer__link {
+  color: inherit;
+}
 .main {
   max-width: 900px;
   margin: 0 auto;
