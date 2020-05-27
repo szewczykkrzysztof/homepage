@@ -22,6 +22,17 @@ footer {
 .about-me__heading {
   color: #353552;
 }
+.main {
+  margin: 0 auto;
+}
+.main-heading {
+  color: white;
+  background: #41566b;
+  margin: 5px 10%;
+  padding: 0 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .navigation {
   background: #3b3b3d;
   padding: 5px;
@@ -41,14 +52,6 @@ footer {
 }
 .navigation__link--active {
   font-weight: bold;
-}
-.page-heading {
-  color: white;
-  background: #41566b;
-  margin: 5px 10%;
-  padding: 0 20px;
-  border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .secondary-heading {
