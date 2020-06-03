@@ -1,6 +1,11 @@
 const firstName = "Krzysiek";
 const age = 42;
 console.log(`Mam na imię ${firstName} i mam ${age} lata`);
+const injection = document.querySelector(".notes-article--js");
+console.log(injection);
+injection.innerHTML = `<h3>Witam tu ${firstName}</h3> To jest artykuł wygenerowany poprzez wstrzyknięcie
+ tego tekstu do kodu DOM za pomocą funkcji innerHTML`;
+console.log(injection);
 
 function myName(name,age) {
     return (`Nazywam się ${name} i mam ${age} lat`);
@@ -16,7 +21,3 @@ console.log(calculate(5));
 console.log(myName(firstName,age));
 
 console.log(myName('Tymon',48));
-
-const aboutMe = document.querySelector(".about-me--js");
-
-aboutMe.innerHTML = `${myName(firstName,age)}`;
