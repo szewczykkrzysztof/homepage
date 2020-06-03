@@ -22,4 +22,4 @@ console.log(myName(firstName,age));
 
 const aboutMeFunction = document.querySelector(".notes-article--welcomeFunction");
 
-aboutMeFunction.innerHTML = myName('Tymon',48);
+aboutMeFunction.innerHTML = `${myName('Tymon',48)} <br> Ale tak naprawdę to:<br> ${myName(firstName,age)}`;
