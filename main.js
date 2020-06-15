@@ -33,12 +33,13 @@ const myAction = () => {
 pobieram zawartość klasy i przypisuję do zmiennej
 wstrzykuję do zmiennej nową treść, zawartość jest automatycznie podmieniana w klasie actionHeading--js */
 
-// myButton.addEventListener("click", myAction); wywołuje funkcję myAction poprzez akcję click na elemencie myButton
+myButton.addEventListener("click", myAction); //wywołuje funkcję myAction poprzez akcję click na elemencie myButton
 
-/* Inny sposób zapisu to zagnieżdżenie funkcji: */
+/* Inny sposób zapisu to zagnieżdżenie funkcji (bez tworzenia nowej zmiennej): 
 
 myButton.addEventListener('click', () => {
     const newHeading = document.querySelector(".actionHeading--js");
   newHeading.innerHTML = `Właśnie podmieniłeś nagłówek`;
 });
 
+*/
