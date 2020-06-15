@@ -21,7 +21,7 @@ const aboutMe = document.querySelector(".about-me--js"); //tworzę zmienną i li
 
 aboutMe.innerHTML = `${myName(firstName, age)}`; //podmieniam zawartość zmiennej
 
-const myButton = document.querySelector(".action--js");
+const myButton = document.querySelector(".action--js"); //tworzę zmienną i podpinam do niej przycisk (czyli zawartość action--js)
 
 console.log(myButton);
 
@@ -33,4 +33,12 @@ const myAction = () => {
 pobieram zawartość klasy i przypisuję do zmiennej
 wstrzykuję do zmiennej nową treść, zawartość jest automatycznie podmieniana w klasie actionHeading--js */
 
-myButton.addEventListener("click", myAction); //wywołuje funkcję myAction poprzez akcję click na elemencie myButton
+// myButton.addEventListener("click", myAction); wywołuje funkcję myAction poprzez akcję click na elemencie myButton
+
+/* Inny sposób zapisu to zagnieżdżenie funkcji: */
+
+myButton.addEventListener('click', () => {
+    const newHeading = document.querySelector(".actionHeading--js");
+  newHeading.innerHTML = `Właśnie podmieniłeś nagłówek`;
+});
+
