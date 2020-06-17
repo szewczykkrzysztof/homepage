@@ -26,6 +26,15 @@ body {
 .about-me__heading {
   color: #353552;
 }
+
+.burger__menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%); /* odwraca kolory obrazka o 100% */
+}
+
 .footer {
   background: #3f3f3f;
   color: white;
@@ -37,8 +46,18 @@ body {
 .footer__link {
   color: inherit; /* link przejmuje kolor rodzica */
 }
-.main {
+
+.header {
+  min-height: 50px; /* ustalam wysokość nagłówka aby zmieściła się ikona hamburgera */
+  position: fixed; /* nagłówek będzie miał ustaloną pozycję i nie będzie się przewijał */
+  top: 0; /* będzie przyklejony do góry okienka */
+  width: 100%; /* na szerokośc całego okna */
+  background-color: 3b3b3d;
+  display: block;
   margin: 0 auto;
+}
+.main {
+  margin: 55px auto 0; /* odsuwam treść poniżej nagłówka */
 }
 .main-heading {
   color: white;
@@ -49,17 +68,20 @@ body {
 }
 .navigation {
   background: #3b3b3d;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid black;
-  display: flex; /* ustawiam własciwość flex dla zawartości sekcji */
-  justify-content: space-around; /* wypełnia elementami calą dostępną przestrzeń dodając wokół elementów marginesy */
+  padding: 16px;
+  display: none; /* elementy nawigacji nie będą się wyświetlać */
   box-sizing: border-box;
 }
+
+.navigation--mobile {
+  background: #3b3b3d;
+  display: block; /* elementy nawigacji beda wyświetlać się w kolumnie */
+}
+
 .navigation__link {
   color: white;
-  display: inline-block;
-  margin: 0 10px;
+  display: block;
+  margin: 0 40px 16px;
 }
 .navigation__link--homepage {
   color: yellow;
@@ -103,6 +125,25 @@ body {
   }
   .main {
     width: 95%;
+  }
+
+  .burger__menu {
+    display: none;
+  }
+
+  .navigation {
+    background: #3b3b3d;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex; /* ustawiam własciwość flex dla zawartości sekcji */
+    justify-content: space-around; /* wypełnia elementami calą dostępną przestrzeń dodając wokół elementów marginesy */
+    box-sizing: border-box;
+    height: 50px;
+  }
+
+  .navigation__link {
+    margin: auto;
   }
   .notes {
     display: grid; /* tworzę kontener na zawartości bloku notatki */

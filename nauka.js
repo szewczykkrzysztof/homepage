@@ -7,17 +7,28 @@ injection.innerHTML = `<h3>Witam tu ${firstName}</h3> To jest artykuł wygenerow
  tego tekstu do kodu DOM za pomocą funkcji innerHTML`;
 console.log(injection);
 
-function myName(name,age) {
-    return (`Nazywam się ${name} i mam ${age} lat`);
-};
+function myName(name, age) {
+  return `Nazywam się ${name} i mam ${age} lat`;
+}
 
 function calculate(number) {
-    square = number * number;
-    return `Kwadrat liczby ${number} to ${square}`;
-};
+  square = number * number;
+  return `Kwadrat liczby ${number} to ${square}`;
+}
 
 console.log(calculate(5));
 
-console.log(myName(firstName,age));
+console.log(myName(firstName, age));
 
-console.log(myName('Tymon',48));
+console.log(myName("Tymon", 48));
+
+const burgerButton = document.querySelector(".burger--js"); //tworze zmienna podłączoną do ikony hamburgera
+
+/*przypisuję do przycisku akcję na klik
+tworzę zmienną zawierającą nawigację*/
+
+burgerButton.addEventListener("click", () => {
+  const topMenu = document.querySelector(".navigation--js");
+  console.log(topMenu);
+  topMenu.classList.toggle("navigation--mobile");
+});
