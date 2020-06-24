@@ -107,6 +107,17 @@ body {
 .notes__article--heading {
   color: #353552;
 }
+
+.notes__article--heading::before {
+  content: '';
+  display: inline-block; /* element będzie się zachowywał jak wewnątrz jak block, ale sam będzie pozycjonowany jak liniowy */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 10px;
+}
+
 .notes__heading {
   color: #353552;
 }
