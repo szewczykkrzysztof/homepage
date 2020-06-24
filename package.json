@@ -1,0 +1,22 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "my homepage project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szewczykkrzysztof/homepage.git"
+  },
+  "keywords": [
+    "homepage"
+  ],
+  "author": "Krzysztof Szewczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szewczykkrzysztof/homepage/issues"
+  },
+  "homepage": "https://github.com/szewczykkrzysztof/homepage#readme"
+}
