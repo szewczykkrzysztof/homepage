@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/szewczykkrzysztof/homepage/issues"
   },
-  "homepage": "https://github.com/szewczykkrzysztof/homepage#readme"
+  "homepage": "https://github.com/szewczykkrzysztof/homepage#readme",
+  "dependencies": {
+    "cow": "^0.2.3"
+  }
 }
