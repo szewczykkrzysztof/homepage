@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/szewczykkrzysztof/homepage#readme",
   "dependencies": {
-    "cow": "^0.2.3"
-  }
+    "react": "^16.13.1"
+  },
+  "devDependencies": {}
 }
