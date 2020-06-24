@@ -89,6 +89,11 @@ body {
 .navigation__link--active {
   font-weight: bold;
 }
+
+.navigation__link:hover {
+  background-color: red;
+}
+
 .notes {
   padding: 0 0;
 }
