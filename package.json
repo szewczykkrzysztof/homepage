@@ -4,6 +4,7 @@
   "description": "my homepage project",
   "main": "main.js",
   "scripts": {
+    "sass": "npx node-sass -w ./scss/style.scss style.css"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/szewczykkrzysztof/homepage#readme",
   "dependencies": {
+    "node-sass": "^4.14.1",
     "react": "^16.13.1"
   },
   "devDependencies": {}
