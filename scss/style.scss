@@ -17,14 +17,16 @@ body {
 .about-me {
   min-height: 320px;
   padding: 0 10%;
-}
-.about-me__image {
-  float: left;
-  margin-right: 20px;
-  border-radius: 10px;
-}
-.about-me__heading {
-  color: #353552;
+
+  &__heading {
+    color: #353552;
+  }
+
+  &__image {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
 }
 
 .burger__menu {
@@ -42,9 +44,10 @@ body {
   margin: 50px auto 0 auto;
   box-sizing: border-box;
   border-radius: 5px;
-}
-.footer__link {
-  color: inherit; /* link przejmuje kolor rodzica */
+
+  &__link {
+    color: inherit; /* link przejmuje kolor rodzica */
+  }
 }
 
 .header {
@@ -71,6 +74,24 @@ body {
   padding: 16px;
   display: none; /* elementy nawigacji nie będą się wyświetlać */
   box-sizing: border-box;
+
+  &__link {
+    color: white;
+    display: block;
+    margin: 0 40px 16px;
+  }
+
+  &__link--homepage {
+    color: yellow;
+  }
+
+  &_link--active {
+    font-weight: bold;
+  }
+
+  &__link:hover {
+    background-color: red;
+  }
 }
 
 .navigation--mobile {
@@ -78,61 +99,51 @@ body {
   display: block; /* elementy nawigacji beda wyświetlać się w kolumnie */
 }
 
-.navigation__link {
-  color: white;
-  display: block;
-  margin: 0 40px 16px;
-}
-.navigation__link--homepage {
-  color: yellow;
-}
-.navigation__link--active {
-  font-weight: bold;
-}
-
-.navigation__link:hover {
-  background-color: red;
-}
 
 .notes {
   padding: 0 0;
-}
-.notes__article {
-  display: block;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 15px 0;
-  border-radius: 5px;
-}
-.notes__article--heading {
-  color: #353552;
+
+  &__article {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+
+  &__article--heading {
+    color: #353552;
+  }
+
+  &__article--heading::before { //Tworzę pseudoelement przed każdym tytułem artykułu w kształcie kółka
+    content: '';
+    display: inline-block; /* element będzie się zachowywał jak wewnątrz jak block, ale sam będzie pozycjonowany jak liniowy */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: orange;
+    margin-right: 10px;
+  }
+
+  &__heading {
+    color: #353552;
+  }
+
+  &__image {
+    display: block;
+    border-radius: 25px;
+    margin: 0 auto; /* wyśrodkowuje obraz horyzontalnie */
+    max-width: 100%; /* skaluje obraz w dół, jeśli przekracza szerokość okna */
+  }
 }
 
-.notes__article--heading::before {
-  content: '';
-  display: inline-block; /* element będzie się zachowywał jak wewnątrz jak block, ale sam będzie pozycjonowany jak liniowy */
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: orange;
-  margin-right: 10px;
-}
-
-.notes__heading {
-  color: #353552;
-}
-.notes__image {
-  display: block;
-  border-radius: 25px;
-  margin: 0 auto; /* wyśrodkowuje obraz horyzontalnie */
-  max-width: 100%; /* skaluje obraz w dół, jeśli przekracza szerokość okna */
-}
 .secondary-heading {
   min-height: 320px;
-}
-.secondary-heading__image {
-  float: left; /* opływanie obrazka z prawej strony */
-  margin-right: 20px;
+
+  &__image {
+    float: left; /* opływanie obrazka z prawej strony */
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width: 750px) {
